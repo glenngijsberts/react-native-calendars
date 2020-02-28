@@ -69,6 +69,8 @@ class Calendar extends Component {
     disableMonthChange: PropTypes.bool,
     /**  Hide day names. Default = false */
     hideDayNames: PropTypes.bool,
+    /**  Hide header. Default = false */
+    hideHeader: PropTypes.bool,
     /** Disable days by default. Default = false */
     disabledByDefault: PropTypes.bool,
     /** Show week numbers. Default = false */
@@ -322,6 +324,7 @@ class Calendar extends Component {
           renderArrow={this.props.renderArrow}
           monthFormat={this.props.monthFormat}
           hideDayNames={this.props.hideDayNames}
+          hideHeader={this.props.hideHeader}
           weekNumbers={this.props.showWeekNumbers}
           onPressArrowLeft={this.props.onPressArrowLeft}
           onPressArrowRight={this.props.onPressArrowRight}
